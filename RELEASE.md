@@ -1,4 +1,4 @@
-# Upcoming Release
+# Release 1.0.0b1
 
 ## Major features and improvements
 * Added execution time to pipeline completion log.
