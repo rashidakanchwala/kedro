@@ -5,7 +5,8 @@ from pathlib import Path
 
 import requests
 
-VERSION_MATCHSTR = r'\s*__version__\s*=\s*"(\d+\.\d+\.\d+)"'
+# Now captures versions like "1.0.0", "1.0.0b1", "1.0.0rc1", etc.
+VERSION_MATCHSTR = r'\s*__version__\s*=\s*"(\d+\.\d+\.\d+(?:a|b|rc)?\d*)"'
 INIT_FILE_PATH = "kedro/__init__.py"
 HTTP_STATUS_NOT_FOUND = 404
 
