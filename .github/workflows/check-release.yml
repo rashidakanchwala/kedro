@@ -37,7 +37,7 @@ jobs:
     uses: ./.github/workflows/all-checks.yml
 
   build-publish:
-    needs: [check-version, test-kedro]
+    needs: [check-version]
     if: |
       always() &&
       !contains(needs.*.result, 'failure') &&
